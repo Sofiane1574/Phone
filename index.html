@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Message Effect !</title>
+	<link rel="stylesheet" type="text/css" href="blueBox/index.css">
+</head>
+<body id="body">
+	<div id="openMessage">
+	</div>
+
+	<div id="message"><br><br><br><br>Ghost,<br>0x626<br>bermingham
+	</div>
+	<div id="sheet">
+		<p>Note <3</p>
+			<br>
+			<p>we're just friends </p>
+		
+		
+	</div>
+
+
+</body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+	$(
+		function(){
+	$('#message').hover(function(){
+		$('#sheet').css('animation','none');
+		$('#sheet').animate({marginTop : "1vw"});
+	},function(){
+		$('#sheet').css('animation','sheet 1s infinite');
+		$('#sheet').animate({marginTop : "5vw"});
+	});});
+</script>
